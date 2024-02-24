@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Primary-color: #121212;
+  --Secondary-color: #252525;
+  --complementary-color: #191919;
+  --grey-color: #D9D9D9;
+  --grey-color-two: #2F2F2F;
+  --grey-color-three: #171717;
+
+}
+
+html, body {
+  scroll-behavior: smooth;
+  background-color: var(--Primary-color);
+}
+
+/*----Catches CSS errors----*/
+.error {
+  border:2px solid red;
+}
+
+.glass {
+  border:2px solid var(--Secondary-color);
+  background: rgba( 23, 23, 23, 0.25 );
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+}
+
+.elevate__box__gradient {
+  border:1px solid var(--Secondary-color);
+  border-bottom:none;
+  background: hsla(0, 0%, 7%, 1);
+  background: linear-gradient(135deg, hsla(0, 0%, 7%, 1) 40%, hsla(0, 0%, 15%, 1) 100%);
+  background: -moz-linear-gradient(135deg, hsla(0, 0%, 7%, 1) 40%, hsla(0, 0%, 15%, 1) 100%);
+  background: -webkit-linear-gradient(135deg, hsla(0, 0%, 7%, 1) 40%, hsla(0, 0%, 15%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#121212", endColorstr="#252525", GradientType=1 );
+}
+
+.gray__border {
+  border:2px solid var(--Secondary-color);
+}
+
+.gray__border__two {
+  border:1px solid #d9d9d9;
+}
+
+.profile__pic__bg {
+  background: hsla(0, 0%, 7%, 1);
+  background: linear-gradient(135deg, hsla(0, 0%, 7%, 1) 40%, hsla(0, 0%, 15%, 1) 100%);
+  background: -moz-linear-gradient(135deg, hsla(0, 0%, 7%, 1) 40%, hsla(0, 0%, 15%, 1) 100%);
+  background: -webkit-linear-gradient(135deg, hsla(0, 0%, 7%, 1) 40%, hsla(0, 0%, 15%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#121212", endColorstr="#252525", GradientType=1 );
+}
+
+.featured__projects__bg {
+  background: hsla(0, 0%, 7%, 1);
+  background: linear-gradient(230deg, hsla(0, 0%, 7%, 1) 0%, hsla(0, 0%, 15%, 1) 75%);
+  background: -moz-linear-gradient(230deg, hsla(0, 0%, 7%, 1) 0%, hsla(0, 0%, 15%, 1) 75%);
+  background: -webkit-linear-gradient(230deg, hsla(0, 0%, 7%, 1) 0%, hsla(0, 0%, 15%, 1) 75%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#121212", endColorstr="#252525", GradientType=1 );
+}
+
+.no__border__bottom {
+  border-bottom: none;
+}
+
+.about__gradient {
+  background: rgb(18,18,18);
+  background: linear-gradient(357deg, rgba(18,18,18,1) 67%, rgba(37,37,37,1) 100%);
+}
+
+@media screen and (max-width:765px) {
+  .mobile {
+    min-width:70%;
+  }
+}
+
+@media screen and (max-width:765px) {
+  .prc__mobile {
+    min-width:400px;
+  }
+  .slider__container {
+    min-width: 100%;
+    -ms-overflow-style: none;
+    -webkit-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .slider__container::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .img__slider__box {
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width:766px) {
+  .cocyle {
+    background-color: var(--grey-color-three);
+  }
+}
