@@ -22,7 +22,7 @@ const HomePage = () => {
 
     return ( 
         <>
-        <div className="w-screen h-screen overflow-x-hidden">
+        <div className="w-screen min-h-screen h-screen  overflow-x-hidden">
            <HeroSection heroAnimation="appear"/>
         </div>
         </>
